@@ -11,7 +11,7 @@
 6.  tag element for Genre selection(All, Action, Drama, Sci-Fi).On select a particular option movies list gets filtered. 
 ![Prject-Screenshots](i3.jpg)
 7. Search text-box on entering required movie name filters data or outputs “no result found”. There’s a dummy search button and css font properties,border properties and background color have been applied.
-![Prject-Screenshots](i1.jpg)
+![Prject-Screenshots](l1.jpg)
 8. Footer contains site logo and copyright info. If required, Action, Drama, Sci-Fi). other site-navigation links can also be merged.
 
 ![Prject-Screenshots](i4.jpg)
