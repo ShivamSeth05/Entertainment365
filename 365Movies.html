@@ -1,0 +1,273 @@
+<html>
+
+  <head>
+    <title>365 Entertainment Portal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="365mov/365ep.jpg" type="image/png" sizes="16x20">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="365ep1.css">
+
+
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <header>
+
+        <div class="navigation">
+
+          <a class="links" href="index.html"><img class="logo" src="365epimages/365ep.jpg" alt="365 Entertainment Portal"/></a>
+          <a class="links text" href="#">Movies</a>
+          <a class="links text" href="#tv_series">TV Series</a>
+          <a class="links text" href="#audio">Audio</a>
+
+
+        </div>
+
+        <div class="bar"></div>
+
+      </header>
+
+      <div class="content">
+
+        <div class="head-content">
+
+          <div class="slideshow-container">
+            <div class="slides">
+              <img src="365epimages/abc1.jpg" alt="hero carousel">
+            </div>
+
+            <div class="slides">
+              <img src="365epimages/abc2.jpg" alt="hero carousel">
+            </div>
+
+            <div class="slides">
+              <img src="365epimages/abc3.jpg" alt="hero carousel">
+            </div>
+
+            <div class="slides">
+              <img src="365epimages/abc4.jpg" alt="hero carousel">
+            </div>
+
+            <div class="slides">
+              <img src="365epimages/abc5.jpg" alt="hero carousel">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+          </div>
+
+        </div>
+
+
+        <div class="dropdown">
+          <button id="dropbtn" onclick="toggleGenreList()"><span id="genreText">Genre</span><i class="fa fa-caret-down"></i></button>
+          <div id="dropdown-content">
+            <a onclick="getMediaPosters(this.text)">All</a>
+            <a onclick="getMediaPosters(this.text)">Action</a>
+            <a onclick="getMediaPosters(this.text)">Drama</a>
+            <a onclick="getMediaPosters(this.text)">Sci-Fi</a>
+          </div>
+
+        </div>
+
+
+        <div class="search-container">
+          <form onsubmit="javascript:return false;">
+            <input type="text" class="input-medium search-query" placeholder="Search your favourite movie title" name="search" oninput="updateResults()">
+
+            <div class="search-container-button">
+              <button type="submit" onclick="updateResults()"><i class="fa fa-search"></i></button>
+            </div>
+
+          </form>
+        </div>
+
+        <div id="media-carousel-container">
+
+
+          <div id="media-holder-action">
+
+            <div id="image-container-action">
+              <div class="movies-action">
+                <div class="media-carousel-movies">
+                  <img src="365epimages/pic1.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Gangs of Wasseypur (2012)</b><br/>Indian crime tragedy film.</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="365epimages/pic2.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Dream 2</b><br/>Thriller, Mystery & Comedy </div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="365epimages/pic3.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Batman</b><br/>A Marvel Comics superhero team.</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="365epimages/pic4.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Monster Manav</b><br/>Japanese manga series written by Tsugumi.</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="365epimages/pic5.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Kill Bill</b><br/>2003 American martial arts film.</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="365epimages/pic6.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Rowdy</b><br/>Indian action drama film.</div>
+                </div>
+              </div>
+
+              <div class="movies-drama">
+                <div class="media-carousel-movies">
+                  <img src="365epimages/pic7.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Agnipaath</b><br/>Indian crime tragedy film.</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="365epimages/pic8.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Ankhein</b><br/>Thriller, Mystery & Comedy .</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="365epimages/pic9.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Guide</b><br/>A Marvel Comics superhero team.</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="365epimages/pic10.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Deewar</b><br/>2016 ‧ Fantasy/Science Fiction.</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="365epimages/pic11.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Sholay</b><br/>A Marvel Comics superhero team.</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="365epimages/pic12.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">K3G</b><br/>A Marvel Comics superhero team.</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="365epimages/pic13.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Shaurya</b><br/>A Marvel Comics superhero team.</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="365epimages/pic14.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Cheeni Kam</b><br/>A Marvel Comics superhero team.</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="365epimages/pic15.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Ishq Vishq</b><br/>A Marvel Comics superhero team.</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="365epimages/pic16.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Padmaavat</b><br/>A Marvel Comics superhero team.</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="365epimages/pic17.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Kai Po Che</b><br/>A Marvel Comics superhero team.</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="365epimages/pic18.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Raabta</b><br/>A Marvel Comics superhero team.</div>
+                </div>
+              </div>
+
+              <div class="movies-scifi">
+                <div class="media-carousel-movies">
+                  <img src="365epimages/pic19.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Interstellar</b><br/>A Marvel Comics superhero team.</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="365epimages/pic20.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Star Wars</b><br/>A Marvel Comics superhero team.</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="365epimages/pic21.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Thor</b><br/>A Marvel Comics superhero team.</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="365epimages/pic22.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Captain America</b><br/>A Marvel Comics superhero team.</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="365epimages/pic23.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">X-Men</b><br/>A Marvel Comics superhero team.</div>
+                </div>
+
+                <div class="media-carousel-movies">
+                  <img src="365epimages/pic24.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Black Widow</b><br/>A Marvel Comics superhero team.</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="365epimages/pic25.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Iron-Man</b><br/>A Marvel Comics superhero team.</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="365epimages/pic26.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Hulk</b><br/>A Marvel Comics superhero team.</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="365epimages/pic27.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Captain Marvel</b><br/>A Marvel Comics superhero team.</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="365epimages/pic28.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Wonder Woman</b><br/>A Marvel Comics superhero team.</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="365epimages/pic29.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Batwoman</b><br/>A Marvel Comics superhero team.</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="365epimages/pic30.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Batman</b><br/>A Marvel Comics superhero team.</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="365epimages/pic31.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Superman</b><br/>A Marvel Comics superhero team.</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="365epimages/pic32.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Superwoman</b><br/>A Marvel Comics superhero team.</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="365epimages/pic33.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Doctor Strange</b><br/>A Marvel Comics superhero team.</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="365epimages/pic34.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Mars</b><br/>A Marvel Comics superhero team.</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="365epimages/pic35.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Gravity</b><br/>A Marvel Comics superhero team.</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="365epimages/pic36.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Martian</b><br/>A Marvel Comics superhero team.</div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div id="no-results">No Results Found.</div>
+
+
+        </div>
+      </div>
+
+    </div>
+
+    <footer>
+
+      <div class="copyright">
+        <a class="links" href="index.html"><img class="logo" src="365epimages/365ep.jpg" alt="365 Entertainment Portal"/></a>
+        <div class="text">Powered by 365 Entertainment Portal 2019. All Rights Reserved.</div>
+      </div>
+
+    </footer>
+
+
+
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+
+</html>
